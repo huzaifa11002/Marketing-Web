@@ -1,0 +1,37 @@
+export default {
+    name:'chooseUs',
+    type:'document',
+    title:'Choose Us',
+    fields:[
+        {
+            name:'image',
+            title:'Image',
+            type:'image',
+        },
+        {
+            name:'point1',
+            title:'Point1',
+            type:'string',
+        },
+        {
+            name:'point2',
+            title:'Point2',
+            type:'string',
+        },
+        {
+            name:'point3',
+            title:'Point3',
+            type:'string',
+        },
+        {
+            name:'point4',
+            title:'Point4',
+            type:'string',
+        },
+        {
+            name:'point5',
+            title:'Point5',
+            type:'string',
+        }
+    ]
+}

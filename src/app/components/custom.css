@@ -1,0 +1,41 @@
+/* CLient Carasoul Styling */
+.client-carasoul-img{
+    aspect-ratio: 3/2;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    object-fit: contain;
+    filter: brightness(80%);
+    mix-blend-mode: color-burn;
+}
+/* Hero Image Animation */
+
+.main-image{
+    width: 100%;
+    height: fit-content;
+    animation: flip 5s infinite ease-in;
+}
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Left Right Animation */
+.left-right-animation {
+    display:none;
+    animation: leftRight 2s infinite alternate;
+}
+@keyframes leftRight {
+    0% {
+        display:inline-block;
+        transform: translateX(0);
+    }
+    100% {
+        display:none;
+        transform: translateX(20px);
+    }
+}
