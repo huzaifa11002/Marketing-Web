@@ -14,7 +14,7 @@ title
 
   const ServiceData: Service[] = await client.fetch(query);
   return (
-    <div className='grid lg:grid-cols-4 gap-5 my-10 grid-cols-1 xs:grid-cols-2'>
+    <div className='grid lg:grid-cols-4 gap-5 my-10 grid-cols-1 xs:grid-cols-2 px-4 py-10'>
       {ServiceData.map((service, index) => (
         <ServiceCard
           key={index}
