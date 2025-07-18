@@ -9,9 +9,7 @@ const Team = async () => {
   const query = `*[_type == 'team']{
 image,
     name,
-    position,
-    facebook,
-    instagram
+    position
 }`;
 
   const TeamData:Team[] = await client.fetch(query)
@@ -21,7 +19,7 @@ image,
         <div className="text-center">
           <h2 className="lg:text-4xl sm:text-2xl text-xl text-main font-bold uppercase relative inline-block">Our team</h2>
         </div>
-        <div className='grid sm:grid-cols-3 grid-cols-1 gap-5 py-10 w-full xl:w-3/4 mx-auto'>
+        <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 py-10 w-full xl:w-3/4 mx-auto'>
         {TeamData.map((team,index)=>(
           <TeamCard {...team} key={index}/>
         ))}
