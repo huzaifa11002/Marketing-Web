@@ -13,7 +13,7 @@ const Footer = () => {
                         <Link href="/" className="w-40">
                             <Logo />
                         </Link>
-                        <p className='xl:text-base sm:text-sm text-xs'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non laborum harum minima consequuntur delectus nobis optio et numquam, ratione inventore?</p>
+                        <p className='xl:text-base sm:text-sm text-xs'>We are a Global Influencer Marketing Agency. Our team manages brand collaborations, creates influencer lists, sends emails, and scrapes data. Boost your sales with our help.</p>
                     </div>
                     <div className='w-full md:w-3/4 flex flex-col md:flex-row md:justify-between gap-5 capitalize'>
                         <ul className='xl:text-base sm:text-sm text-xs flex flex-col gap-1'>
