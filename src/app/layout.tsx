@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsappIcon from "./components/WhatsappIcon";
 import BottomToTop from "./components/topToBottom";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,13 +26,25 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-43TJ7JSTTQ"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-43TJ7JSTTQ');
+  `}
+      </Script>
       <body className={poppins.className}>
         <Header />
         {children}
         <WhatsappIcon />
-        <BottomToTop/>
+        <BottomToTop />
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
